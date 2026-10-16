@@ -48,17 +48,15 @@ class ActivityDetailScreen extends StatelessWidget {
                   onPressed: isJoined
                       ? null
                       : () {
-                          Navigator.pop(
-                            context,
-                            true
-                          ); // Handle join activity logic here
+                          Navigator.pop(context, true);
                         },
                   child: Text(isJoined ? "Prijavljen" : "Prijavi se"),
                 ),
-                OutlinedButton(onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: const Text("Natrag"),
+                OutlinedButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: const Text("Natrag"),
                 ),
               ],
             ),
